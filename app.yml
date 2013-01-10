@@ -1,0 +1,61 @@
+!!com.taobao.tae.config.domain.Config
+
+#应用元信息
+title: 友友UZ
+#网页标题的设置
+description: 友友UZ，专业UZ产品
+language: php
+author: 鹤发童颜不老翁,huangyang_110
+thumbnail: /logo.jpg
+
+#type: 1 tae 模块 2 独立站点
+type: 2
+
+#全局css的配置
+css: /assets/stylesheets/default.css
+
+#首页 通过域名直接访问的页面如test.uz.taobao.com访问时的页面
+index: /view/front/index.php
+
+
+#http请求配置
+urls:
+#前端页面
+#url配置的是短域名，配置后可以访问/view/front/view.php 相当于是 /d/index 
+#主页 其中包含了css和js的demo
+- {handler: /view/front/index.php, url: /index}
+#商品列表
+- {handler: /view/front/productlist.php, url: /productlist}
+#商品详情
+- {handler: /view/front/item_detail.php, url: /item}
+
+#错误页
+- {handler: /view/front/error.php, url: /error}
+
+
+
+#后台管理，只能站点所有者才能访问
+- {handler: /view/owner/owner.php, url: /owner}
+
+
+#会员中心，只能登录用户才能访问
+- {handler: /view/custmor/custmor.php, url: /custmor}
+
+
+#安全和权限配置，默认是所有人都可以访问
+#这个是前缀规则, url代表请求相对路径的前缀。
+#role代表安全级别
+#anonymous是任何用户都可以访问
+#developer是站点所有者才能访问,
+#shopcustomer 是表示登录用户可以访问
+
+security:
+#front下面页面都是所有人可以访问
+- {url: /view/front,role: anonymous }
+
+#owner下面页面只有自己可以访问
+- {url: /view/owner,role: developer }
+
+#custmor下面页面只有登录可以访问
+- {url: /view/custmor,role: shopcustomer  }
+

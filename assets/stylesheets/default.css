@@ -1,0 +1,204 @@
+.taeapp div{margin:0px auto;}
+.taeapp div.footer{ color:#0000cd; font-size:16px;height:25px; margin:0px auto;text-align:center;}
+.taeapp .clear{ clear:both}
+
+.taeapp a{ font-size:12px; color:gray}
+.taeapp b{ font-size:12px; color:gray; font-weight:normal;}
+ 
+.taeapp .username{ color:#D2394B;font-weight:800}
+
+.taeapp div.page{background-position: 50% 0%; background-repeat: no-repeat;  background-color:#DFDDE1;}
+ 
+.taeapp div.content,.taeapp div.bottom{width:950px;}
+
+.taeapp .txtgray
+{
+	height: 25px;
+	border: 1px solid gray;
+	background-color: #FAFAFA;
+}
+
+.taeapp .btn1
+{
+	width: 100px;
+	height: 30px;
+	border: 0px solid #CECECE;
+	background-color: #D92C4A;
+	color: white;
+	cursor: pointer;
+}
+.taeapp .headertop
+{
+	height:140px;
+	position:relative
+
+}
+
+
+
+
+/**
+sharebtn css
+**/
+.taeapp div.sns-sharebtn-default, div .dg-sns-sharebtn {
+background: url(http://img03.taobaocdn.com/tps/i3/T1fKb_XfhcXXauUnsh-180-177.png) -135px -133px;
+width: 45px;
+height: 22px;
+padding: 0;
+}
+.taeapp div.sns-sharebtn-index {
+background: url(/assets/images/share.png);
+width: 49px;
+height: 26px;
+padding: 0;
+cursor:pointer;
+}
+
+
+
+/**
+waterfall css
+**/
+
+.taeapp  .wrap{position:relative;zoom:1;margin:0px auto;visibility:hidden;margin-top:20px;min-height:1200px;}
+.taeapp  .wrap.isVisble{visibility:visible;}
+.taeapp .wrap b{position:absolute;left:0;top:0;opacity:1;visibility:hidden;}
+.taeapp .wrap b.isVisble{visibility:visible;}
+
+.taeapp .mode{width:199px;padding:10px 13px 6px;border:1px solid #fff;background:#FFF; border-radius: 5px;}
+.taeapp .mode:hover{border:1px solid #F69;}
+.taeapp .mode .pic{ width:200px;margin-bottom:7px;position:relative;text-align:center}
+.taeapp .mode .pic a{display:block}
+.taeapp .mode .pic a img{ width:200px;vertical-align: bottom;}
+.taeapp .mode span a{font-size:12px; text-decoration:none; color:gray}
+
+
+
+/**
+宝贝列表 css
+**/
+
+.taeapp .box_shadow {
+background: white;
+box-shadow: 0 1px 3px rgba(34, 25, 25, 0.2);
+-webkit-box-shadow: rgba(34, 25, 25, 0.2) 0px 1px 3px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+}
+
+
+
+.taeapp .productbody
+{
+width:950px; position:relative;
+
+padding-top:15px;
+}
+.taeapp .product_cat
+{
+	width:165px;
+	float:left;
+}
+.taeapp .product_list {
+width: 715px;
+float: right;
+overflow: hidden;
+position:relative;
+}
+.taeapp .pd13
+{
+padding: 13px;
+}
+
+
+
+/**
+分页 css
+**/
+.taeapp .pagerlist {
+
+width:950px;
+font-weight: 700;
+color: #999;
+}
+.taeapp .pagerlist .tp {
+margin-top: 3px;
+margin-bottom: 5px;
+_margin-bottom: 5px;
+}
+.taeapp .page-bottom {
+float: right;
+}
+
+.taeapp .pagerlist a,.taeapp .page-info,.taeapp .page-prev,.taeapp .page-start,.taeapp .page-curr,.taeapp .page-end {
+height: 28px;
+padding: 10px 14px 0;
+margin-right: 0;
+background-image: none;
+color:black;
+text-decoration:none;
+}
+
+.taeapp .pagerlist a,.taeapp .page-info,.taeapp .pagerlist .page-prev,.taeapp .pagerlist .page-curr,.taeapp .pagerlist .page-start,.taeapp .pagerlist .page-end,.taeapp .page-break {
+float: left;
+}
+.taeapp .pagerlist .page-prev,.taeapp .pagerlist .page-start {
+border-right: none;
+}
+.taeapp .pagerlist .page-start,.taeapp .pagerlist .page-prev {
+border: 1px solid #E5E5E5;
+width: auto;
+background-color: #fff;
+}
+
+.taeapp .pagerlist .page-curr {
+background-color: #000;
+border: 1px solid #E5E5E5;
+color: #fff;
+border-left:0 solid #ffffff;
+height:28px;
+}
+
+
+
+.taeapp .pagerlist .page-next a {
+border: 1px solid #E5E5E5;
+border-left: 0 solid #ffffff;
+
+}
+
+.taeapp .page-curr,.taeapp .pagerlist a {
+border: 1px solid #E5E5E5;
+border-left: 0;
+background:#fff;
+color:#000;
+}
+.taeapp .pagerlist .page-end
+{
+	border-top: 1px solid #E5E5E5;
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	background:#fff;
+	color:#000;
+}
+
+
+
+
+
+/**
+后台 css
+**/
+.taeapp .admin_listtable{
+	border-top:1px solid #000;
+	border-left:1px solid #000;
+	width:100%;
+}
+.taeapp .admin_listtable td{
+	border-right:1px solid #000;
+	border-bottom:1px solid #000;
+}
+.taeapp .txt50{
+	width:50px;
+}

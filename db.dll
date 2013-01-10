@@ -1,0 +1,78 @@
+DROP TABLE IF EXISTS `vote_info`;
+CREATE TABLE  `vote_info` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT ,
+  `NICK` varchar(50) DEFAULT NULL,
+  `CAT_ID` int(11) DEFAULT NULL,
+  `ITEM_ID` int(11) DEFAULT NULL,
+  `STATUS` int(11) DEFAULT NULL,
+  `MEMO` varchar(250) DEFAULT NULL,
+  `SELLER_ID`  int(11) DEFAULT NULL,
+  `GMT_CREATE` datetime DEFAULT NULL,
+  `GMT_MODIFIED` datetime DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+
+DROP TABLE IF EXISTS `vote_item`;
+CREATE TABLE  `vote_item` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT ,
+  `NAME` varchar(50) DEFAULT NULL,
+  `CAT_ID` int(11) DEFAULT NULL,
+  `STATUS` int(11) DEFAULT NULL,
+  `MEMO` varchar(250) DEFAULT NULL,
+  `SELLER_ID`  int(11) DEFAULT NULL,
+  `GMT_CREATE` datetime DEFAULT NULL,
+  `GMT_MODIFIED` datetime DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+INSERT INTO `vote_item` (`ID`, `NAME`, `CAT_ID`, `STATUS`, `MEMO`, `SELLER_ID`, `GMT_CREATE`, `GMT_MODIFIED`) VALUES (1, '苹果', 1, 0, '山东省', 123456, '2012-10-27 21:49:38', '2012-10-27 21:49:39');
+INSERT INTO `vote_item` (`ID`, `NAME`, `CAT_ID`, `STATUS`, `MEMO`, `SELLER_ID`, `GMT_CREATE`, `GMT_MODIFIED`) VALUES (2, '橙子', 1, 0, '山东省', 123456, '2012-10-27 21:49:38', '2012-10-27 21:49:39');
+INSERT INTO `vote_item` (`ID`, `NAME`, `CAT_ID`, `STATUS`, `MEMO`, `SELLER_ID`, `GMT_CREATE`, `GMT_MODIFIED`) VALUES (3, '西瓜', 2, 0, '山东省', 123456, '2012-10-27 21:49:38', '2012-10-27 21:49:39');
+INSERT INTO `vote_item` (`ID`, `NAME`, `CAT_ID`, `STATUS`, `MEMO`, `SELLER_ID`, `GMT_CREATE`, `GMT_MODIFIED`) VALUES (4, '梨子', 2, 0, '山东省', 123456, '2012-10-27 21:49:38', '2012-10-27 21:49:39');
+
+
+
+DROP TABLE IF EXISTS `vote_cat`;
+CREATE TABLE  `vote_cat` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT ,
+  `NAME` varchar(50) DEFAULT NULL,
+  `STATUS` int(11) DEFAULT NULL,
+  `MEMO` varchar(250) DEFAULT NULL,
+  `SELLER_ID`  int(11) DEFAULT NULL,
+  `GMT_CREATE` datetime DEFAULT NULL,
+  `GMT_MODIFIED` datetime DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+CREATE TABLE `item` (
+	`id` BIGINT(20) NOT NULL,
+	`name` VARCHAR(50) NULL DEFAULT NULL,
+	`time` TIME NULL DEFAULT NULL,
+	`price` DOUBLE NULL DEFAULT NULL,
+	`description` VARCHAR(500) NULL DEFAULT NULL,
+	UNIQUE INDEX `name` (`name`),
+	INDEX `id` (`id`)
+)COLLATE='gbk_chinese_ci' 
+ENGINE=InnoDB 
+ROW_FORMAT=DEFAULT;
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (1, 'sdshdso1', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (2, 'sdshdso2', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (3, 'sdshdso3', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (4, 'sdshdso4', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (5, 'sdshdso5', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (6, 'sdshdso6', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (7, 'sdshdso7', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (8, 'sdshdso8', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (9, 'sdshdso9', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (10, 'sdshdso10', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (11, 'sdshdso11', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (12, 'sdshdso12', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (13, 'sdshdso13', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (14, 'sdshdso14', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (15, 'sdshdso15', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (16, 'sdshdso16', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (17, 'sdshdso17', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (18, 'sdshdso18', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (19, 'sdshdso19', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (20, 'sdshdso20', '15:31:36', 1.2, NULL);
+INSERT INTO `item` (`id`, `name`, `time`, `price`, `description`) VALUES (21, 'sdshdso21', '15:31:36', 1.2, NULL);
