@@ -1,8 +1,14 @@
+i
+
+
 1.demo 使用提示
 demo 中包含了图片，链接，js，css，各种服务的使用的示例
 
 2.数据库访问设置
 在本地sdk进行调试时，将dao/dbconfig.php 文件中的配置修改一下。
+
+
+test this file;
 $votePDO = new PDO(); 
 修改成本地的数据库，例如：
 $votePDO = new PDO('mysql:host=10.232.31.92;port=4040;dbname=app123456', 'app123456', 'pswd123456');
